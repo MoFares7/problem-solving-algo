@@ -5,16 +5,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int a , b , years = 0;
+        int n, know = 0;
         Scanner scanner = new Scanner(System.in);
-       a = scanner.nextInt();
-       b = scanner.nextInt();
+        n = scanner.nextInt();
 
-     while(a <= b){
-         a = a * 3;
-         b = b * 2;
-         years++;
-     }
-        System.out.println(years);
+        for (int i = 0; i < n; i++) {
+            int know1 = scanner.nextInt();
+            int know2 = scanner.nextInt();
+            int know3 = scanner.nextInt();
+            if(know1 + know2 + know3 > 1){
+                know++;
+            }
+        }
+        System.out.println(know);
     }
 }
